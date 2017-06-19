@@ -4,4 +4,9 @@ Route::resource('/', 'IndexController', [
                                         'names' => [
                                             'index' => 'home'
                                         ]
-                                        ]);
+]);
+Route::resource('portfolios', 'PortfolioController', [
+    'parameters'=>[
+        'portfolios'=>'alias'
+    ]
+]);
